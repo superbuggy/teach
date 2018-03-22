@@ -14,6 +14,8 @@ main {
   height: 100vh;
   width: 100vw;
   display: grid;
+  grid-template-columns: 17vw 50vw 17vw;
+  /* grid-template-rows: 17vw 66vw 17vw; */
   justify-content: center;
   background: rgba(254, 0, 254, 0.1);
 }
@@ -31,7 +33,12 @@ div.controls {
 }
 
 div.times {
-  
+  font-family: Source Code Pro;
+  font-size: 2vh;
+  color: rgba(255, 204, 0, 1);
+  background: purple;
+  max-height: 50vh;
+  padding: .5em;
 }
 
 span.time {
@@ -41,6 +48,7 @@ span.time {
 }
 
 code {
+  margin: 0 auto;
   padding: .5em;
   display: block;
   min-height: 60vh;
@@ -69,4 +77,14 @@ button {
   background: purple;
   font-size: 2vw;
   border: 4px solid rgba(255, 0, 255, .3);
+}
+
+section {
+  font-style: italic;
+  padding: .5em;
+  border-bottom: 2px solid rgba(255, 0, 255, .3);
+}
+section > p {
+  padding: .25em;
+  background: rgba(255, 0, 169, .6);
 }
