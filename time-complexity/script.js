@@ -26,7 +26,7 @@ function consoleWrite (message, newLine) {
 }
 
 function single () {
-  consoleWrite('in single, logging array...', true)
+  consoleWrite('in function <i>single</i>, logging array...', true)
   for (var i = 0; i < wholeNumbers.length; i++) {
     consoleWrite(wholeNumbers[i])
   }
@@ -35,14 +35,14 @@ function single () {
 
 function quadratic () {
   for (var i = 0; i < wholeNumbers.length; i++) {
-    consoleWrite('in quadratic, outside of the innermost for-loop, iterating over: ' + wholeNumbers[i], true)
+    consoleWrite('in function <i>quadratic</i>, outside of the innermost for-loop, iterating over: ' + wholeNumbers[i], true)
     single()
   }
 }
 
 function cubic () {
   for (var i = 0; i < wholeNumbers.length; i++) {
-    consoleWrite('in cubic, the outermost of 3 nested for-loops, iterating over: ' + wholeNumbers[i], true)
+    consoleWrite('in function <i>cubic</i>, the outermost of 3 nested for-loops, iterating over: ' + wholeNumbers[i], true)
     quadratic()
   }
 }
