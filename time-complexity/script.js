@@ -12,7 +12,7 @@ new Array(...document.querySelectorAll('button')).forEach(button => {
 })
 
 function handleClick (funcName) {
-  let func = eval(funcName)
+  let func = window[funcName]
   pageConsole.innerHTML = ''
   const milliseconds = measureTime(func).toFixed(3)
   const timeRanSpan = `<span class="time">Ran in ${milliseconds} milliseconds</span>`
