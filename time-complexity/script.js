@@ -8,7 +8,6 @@ const times = {
 }
 
 new Array(...document.querySelectorAll('button')).forEach(button => {
-  console.log(button.id)
   button.addEventListener('click', _ => handleClick(button.id))
 })
 
@@ -61,12 +60,10 @@ function cubic () {
 
 // a way to measure time and execute the function
 function measureTime (func) {
-  pageConsole.innerHTML = ''
   let start = window.performance.now()
   console.time(func.name)
   func()
   console.timeEnd(func.name)
   let end = window.performance.now()
-  console.log(start, end, end - start)
   return end - start
 }
