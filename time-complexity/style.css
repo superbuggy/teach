@@ -53,8 +53,14 @@ code {
 
 button {
   font-family: Source Code Pro;
-  color: rgba(255, 204, 0, 1);
-  text-shadow: 2px 2px 0px rgb(89, 13, 89);
+  color: rgba(242, 255, 4, 0.8);
+  text-shadow: -1px  -1px 1px rgba(255, 217, 0, 0.8),
+               /* 2px  2px 0px rgba(194, 227, 233, 0.8), */
+               3px  3px 1px rgba(169, 7, 155, 0.6),
+              -2px -2px 1em rgba(87,  11, 108, .8),
+               2px -2px 1em rgba(87,  11, 108, .8),
+              -2px  2px 1em rgba(87,  11, 108, .8),
+               2px  2px 1em rgba(87,  11, 108, .8);
   display: block;
   background: rgba(255, 0, 255, .4);
   font-size: 2vw;
