@@ -37,23 +37,24 @@ function consoleWrite (message, newLine) {
 }
 
 function single () {
-  consoleWrite('in function <i>single</i>, logging array...', true)
+  consoleWrite('Logging array in function <i>single</i>...', true)
   for (var i = 0; i < wholeNumbers.length; i++) {
-    consoleWrite(wholeNumbers[i])
+    consoleWrite(`${wholeNumbers[i]} `)
   }
-  consoleWrite('Done...', true)
 }
 
 function quadratic () {
   for (var i = 0; i < wholeNumbers.length; i++) {
-    consoleWrite('in function <i>quadratic</i>, outside of the innermost for-loop, iterating over: ' + wholeNumbers[i], true)
+    consoleWrite(`------------------------------`, true)
+    consoleWrite(`Iterating over ${wholeNumbers[i]} in function <i>quadratic</i>, outside of the inner-most for-loop`, true)
     single()
   }
 }
 
 function cubic () {
+  consoleWrite(`==============================`, true)
   for (var i = 0; i < wholeNumbers.length; i++) {
-    consoleWrite('in function <i>cubic</i>, the outermost of 3 nested for-loops, iterating over: ' + wholeNumbers[i], true)
+    consoleWrite(`Iterating over ${wholeNumbers[i]} in function <i>cubic</i>, the outermost of 3 nested for-loops`, true)
     quadratic()
   }
 }
