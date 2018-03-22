@@ -37,7 +37,7 @@ div.times {
   font-size: 2vh;
   color: rgba(255, 204, 0, 1);
   background: purple;
-  max-height: 50vh;
+  max-height: 66vh;
   padding: .5em;
 }
 
@@ -80,11 +80,25 @@ button {
 }
 
 section {
-  font-style: italic;
   padding: .5em;
   border-bottom: 2px solid rgba(255, 0, 255, .3);
 }
 section > p {
   padding: .25em;
   background: rgba(255, 0, 169, .6);
+}
+p.input-size {
+  padding: .25em;
+  font-style: italic;
+  text-align: center;
+  background: rgba(255, 0, 169, .3);
+}
+
+h3 {
+  text-align: right;
+}
+
+header {
+  padding: .25em;
+  border-bottom: 1px solid rgba(255, 204, 0, 1);
 }
